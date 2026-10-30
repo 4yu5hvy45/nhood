@@ -1,13 +1,13 @@
 # Neighbourhood — website
 
-Hand-drawn + digital website for **Neighbourhood**, a glasshouse café at 134 Saket Nagar Main Road, Indore ([@neighbourhood.idr](https://www.instagram.com/neighbourhood.idr/)).
+Website for **Neighbourhood**, Kitchen & Coffee Bar, 134 Saket Nagar Main Road, Indore ([@neighbourhood.idr](https://www.instagram.com/neighbourhood.idr/)).
 
-- `index.html` — the site (static, no build step)
-- `motion.html` — the animated hero on its own, for screen recording (press **D** for evening, **R** to replay)
-- `assets/img` — illustration, photos, paper textures, logo, social preview
-- `assets/fonts` — self-hosted fonts (Permanent Marker, Caveat, Fraunces, Poppins, Quicksand)
-- `assets/ig` — drop Instagram photos here named by post code (e.g. `DebPkYkiUeu.jpg`). Until a photo exists, that card shows the official Instagram embed instead.
+- `index.html` — the whole site, self-contained (fonts, photos and illustration embedded). Static, no build step.
+- `assets/photos/neighbourhood-team.webp` — team photo used in Our Story (loaded from file).
+- `assets/` — source files for edits: cleaned façade illustration, auto-rickshaw (image + editable SVG), logo.
 
-Instagram cards currently used: `DebPkYkiUeu`, `Db5Q7yoAtET`, `De6jehAExYY`, `DeWHNgcgoUM`, `DeOv3RAAuX5`, `DdHCo4dE200`.
+Hero: watercolour façade blended into the page, auto-rickshaw that stops at the gate, a dog on the steps, the wall logo inking itself in, lamps after 7 pm Indore time. Lenis smooth scroll. Reduced-motion respected.
 
-Hosting: GitHub Pages → Settings → Pages → Deploy from branch `main`, folder `/ (root)`.
+Hosting: GitHub Pages, branch `main`, folder `/ (root)`.
+
+Designed by Beyond Branding · thebeyondbranding.com

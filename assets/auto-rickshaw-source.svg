@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="600" height="400">
+  <defs>
+    <filter id="paint" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="1" seed="8" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 .5  0 0 0 0 .45  0 0 0 0 .35  0 0 0 .22 0" result="gr"/>
+      <feComposite in="gr" in2="d" operator="in" result="gi"/>
+      <feBlend in="d" in2="gi" mode="multiply"/>
+    </filter>
+    <linearGradient id="gBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A8E58"/><stop offset=".55" stop-color="#2F7A4C"/><stop offset="1" stop-color="#235C3A"/></linearGradient>
+    <linearGradient id="gYel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2CF55"/><stop offset="1" stop-color="#D8A932"/></linearGradient>
+    <linearGradient id="gGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DDF0EA"/><stop offset="1" stop-color="#A9CFC8"/></linearGradient>
+    <linearGradient id="gCanvas" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#363A35"/><stop offset="1" stop-color="#242723"/></linearGradient>
+  </defs>
+  <g filter="url(#paint)" stroke="#1F2B22" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- rear canvas cabin -->
+    <rect x="176" y="28" width="88" height="80" fill="url(#gCanvas)"/>
+    <rect x="194" y="42" width="52" height="32" rx="6" fill="#4A5A53" stroke="#1A1F1B"/>
+    <path d="M200 46h40" stroke="#6E8078" stroke-width="2"/>
+    <rect x="100" y="30" width="78" height="108" fill="#5B5342"/>
+    <path d="M100 118 L178 118" stroke="#3E382C" stroke-width="2"/>
+    <!-- passenger seat glimpse -->
+    <rect x="150" y="78" width="30" height="30" rx="4" fill="#5A3A2A" stroke="#2A1C14"/>
+    <!-- windscreen -->
+    <path d="M58 40 L72 31 L104 31 L104 94 L52 96 Z" fill="url(#gGlass)"/>
+    <path d="M64 44 L84 34" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="2.4"/>
+    <!-- driver -->
+    <path d="M110 66 Q126 58 142 66 L146 124 L106 124 Z" fill="#EFE7D6" stroke="#4B4436"/>
+    <circle cx="126" cy="50" r="11" fill="#5A3B28"/>
+    <path d="M116 46 Q126 34 137 45" fill="#1E1A16" stroke="none"/>
+    <path d="M112 72 Q98 78 92 84" fill="none" stroke="#EFE7D6" stroke-width="6"/>
+    <path d="M86 80 L104 88" stroke="#2A2A28" stroke-width="3"/>
+    <!-- canopy: roof, front pillar, rear pillar -->
+    <path d="M40 34 Q42 13 66 12 L262 12 Q277 12 277 28 L277 110 L262 110 L262 30 L72 30 Q60 30 58 40 L54 98 L44 98 Z" fill="url(#gYel)"/>
+    <path d="M70 18 L258 18" stroke="#FBE7A0" stroke-width="2.4" stroke-opacity=".9"/>
+    <!-- side mirror -->
+    <path d="M44 46 L32 42" stroke="#2A2A28" stroke-width="2"/><ellipse cx="29" cy="41" rx="5" ry="4" fill="#C9CCC6"/>
+    <!-- rear body with wheel arch -->
+    <path d="M174 104 L277 104 L277 158 Q277 162 272 162 L254 162 A32 32 0 0 0 190 162 L174 162 Z" fill="url(#gBody)"/>
+    <!-- sill -->
+    <path d="M84 136 L178 136 L178 158 L84 158 Z" fill="url(#gBody)"/>
+    <path d="M86 140 L276 140" stroke="#E8C042" stroke-width="3"/>
+    <!-- front cowl around the front wheel -->
+    <path d="M88 96 L48 100 Q22 104 16 128 Q13 150 22 160 L30 160 A28 28 0 0 1 86 160 L90 160 Z" fill="url(#gBody)"/>
+    <path d="M30 124 Q50 116 86 114" fill="none" stroke="#E8C042" stroke-width="3"/>
+    <!-- headlight + indicator -->
+    <circle cx="25" cy="118" r="8" fill="#FBF1C4" stroke="#C9CCC6" stroke-width="2.4"/>
+    <circle cx="25" cy="118" r="3" fill="#FFFFFF" stroke="none"/>
+    <rect x="15" y="134" width="7" height="5" rx="1.5" fill="#E8913A"/>
+    <!-- step + plate -->
+    <rect x="236" y="148" width="30" height="10" rx="2" fill="#F4F1E6" stroke="#4B4436"/>
+    <path d="M150 162 L176 162" stroke="#1F2B22" stroke-width="2"/>
+    <!-- exhaust -->
+    <path d="M270 162 L284 164" stroke="#5A5A55" stroke-width="4"/>
+  </g>
+</svg>
