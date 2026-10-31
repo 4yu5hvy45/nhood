@@ -968,6 +968,17 @@ header.hero .art.art2{mix-blend-mode:multiply!important}
 @media (min-width:601px) and (max-width:980px){header.hero{--hh:68vw}}
 @media (prefers-reduced-motion:reduce){.scroll-cue i::after,#scene .rays,.nh-fg{animation:none}.nh-js header.hero h1 .serif-i{opacity:1;transform:none}.nh-js header.hero h1 .hl{background-size:100% 100%!important}#scene .wall-note{opacity:1}#scene .note-arrow{stroke-dashoffset:0}}
 </style>
+<style>
+/* v26 · phone/tablet: rounded floating header */
+@media (max-width:980px){
+ nav,nav.solid{top:max(10px,env(safe-area-inset-top));left:12px;right:12px;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+ nav .nav-in{margin:0 auto;max-width:640px;padding:8px 8px 8px 16px!important;border-radius:999px;background:rgba(246,241,231,.72);-webkit-backdrop-filter:blur(14px) saturate(140%);backdrop-filter:blur(14px) saturate(140%);border:1px solid rgba(36,57,42,.1);box-shadow:0 10px 30px -14px rgba(36,57,42,.35);transition:background .4s,box-shadow .4s}
+ nav.solid .nav-in{background:rgba(246,241,231,.9);box-shadow:0 12px 34px -14px rgba(36,57,42,.45)}
+ nav .brand{font-size:20px;gap:9px}nav .brand svg{width:32px}
+ nav .nav-r .pill{padding:9px 15px;box-shadow:none}
+ html{scroll-padding-top:90px}
+}
+</style>
 </head>
 <body>
 
